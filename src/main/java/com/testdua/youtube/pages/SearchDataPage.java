@@ -31,9 +31,6 @@ public class SearchDataPage {
     @FindBy(xpath = "//*[@id=\"container\"]/ytd-two-column-search-results-renderer")
     WebElement txtResultSearch;
 
-    @FindBy(xpath = "//*[@id=\"items\"]/ytmusic-message-renderer/yt-formatted-string[1]")
-    WebElement txtResultNotFound;
-
 
     public String getTxtValidURL() {
         return txtValidURL.getText();}
@@ -49,11 +46,4 @@ public class SearchDataPage {
         return txtResultSearch.getText();
     }
 
-    public String getTxtResultNotFound() {
-        return txtResultNotFound.getText();
-    }
-
-    public String getTxtAttributeSearch() {
-        return inputDataSearch.getAttribute("placeholder");
-    }
 }
